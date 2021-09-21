@@ -2,8 +2,11 @@
 <html lang="en"> <!--the container that contains all the content of a web page and language of page-->
 
 <head>
+    <!-- actually, the charset attribute is responsible for declaring character encoding type (in this case Unicode). -->
+    <!-- In short, the rules by which we encode each symbol (character) if this document into a sequence of bytes. -->
+    <!-- https://ru.wikipedia.org/wiki/UTF-8 -->
     <meta charset="utf-8"> <!--information about data in html-->
-
+  
     <title>Заголовок сторінки</title> <!--name of page-->
 </head>
 
@@ -21,6 +24,8 @@
         <li><a href="#">Реквізити</a></li>
       </ul>
 
+        <!-- do not use form tag outside the main tag -->
+        <!-- nav tag should consist only of navigation-related tags, i.e. don't use form tag here -->
        <form> <!--create form for user information in one of elements-->
          <input type="search" name="q" placeholder="Що шукаємо?"> <!--area where user can enter info-->
          <input type="submit" value="Відправити">
